@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Flash Cards-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="FlashCardsViewController" id="Y6W-OH-hqX" customClass="FlashCardsViewController" customModule="FunWithFlags" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="g2e-HP-31Q">
+                                <rect key="frame" x="24" y="68" width="366" height="49"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How well do you know your flags?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mMb-06-3zj">
+                                        <rect key="frame" x="0.0" y="0.0" width="366" height="24"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap the card to reveal the country" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rQp-TV-eRb">
+                                        <rect key="frame" x="0.0" y="32" width="366" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CFn-Yf-KN5">
+                                <rect key="frame" x="24" y="307" width="366" height="282"/>
+                                <subviews>
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fHc-rq-K2v">
+                                        <rect key="frame" x="0.0" y="0.0" width="366" height="282"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xEt-Et-wEq">
+                                                <rect key="frame" x="24" y="120" width="318" height="42"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="xEt-Et-wEq" secondAttribute="trailing" constant="24" id="8HL-Ry-B0s"/>
+                                            <constraint firstItem="xEt-Et-wEq" firstAttribute="centerX" secondItem="fHc-rq-K2v" secondAttribute="centerX" id="DKG-2w-zWo"/>
+                                            <constraint firstItem="xEt-Et-wEq" firstAttribute="leading" secondItem="fHc-rq-K2v" secondAttribute="leading" constant="24" id="N13-p0-bRB"/>
+                                            <constraint firstAttribute="height" constant="282" id="iIs-Oh-O0g"/>
+                                            <constraint firstItem="xEt-Et-wEq" firstAttribute="centerY" secondItem="fHc-rq-K2v" secondAttribute="centerY" id="qgb-iX-aHn"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EHS-DR-yX2">
+                                        <rect key="frame" x="0.0" y="0.0" width="366" height="282"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="azJ-eU-l4q">
+                                                <rect key="frame" x="16" y="16" width="334" height="250"/>
+                                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="250" id="090-id-gXN"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="azJ-eU-l4q" secondAttribute="trailing" constant="16" id="1oZ-El-70j"/>
+                                            <constraint firstItem="azJ-eU-l4q" firstAttribute="centerX" secondItem="EHS-DR-yX2" secondAttribute="centerX" id="2pf-BM-S2u"/>
+                                            <constraint firstItem="azJ-eU-l4q" firstAttribute="centerY" secondItem="EHS-DR-yX2" secondAttribute="centerY" id="92B-xe-Jxc"/>
+                                            <constraint firstItem="azJ-eU-l4q" firstAttribute="top" secondItem="EHS-DR-yX2" secondAttribute="top" constant="16" id="OMT-eC-IOD"/>
+                                            <constraint firstItem="azJ-eU-l4q" firstAttribute="leading" secondItem="EHS-DR-yX2" secondAttribute="leading" constant="16" id="iH5-2u-zmp"/>
+                                            <constraint firstAttribute="bottom" secondItem="azJ-eU-l4q" secondAttribute="bottom" constant="16" id="mM1-Um-HLx"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="EHS-DR-yX2" firstAttribute="centerY" secondItem="CFn-Yf-KN5" secondAttribute="centerY" id="1hb-6A-2qA"/>
+                                    <constraint firstItem="EHS-DR-yX2" firstAttribute="centerX" secondItem="CFn-Yf-KN5" secondAttribute="centerX" id="6R7-aE-qkC"/>
+                                    <constraint firstAttribute="bottom" secondItem="EHS-DR-yX2" secondAttribute="bottom" id="BZC-Zv-ooH"/>
+                                    <constraint firstAttribute="trailing" secondItem="EHS-DR-yX2" secondAttribute="trailing" id="C7K-Ga-VyK"/>
+                                    <constraint firstItem="fHc-rq-K2v" firstAttribute="leading" secondItem="CFn-Yf-KN5" secondAttribute="leading" id="Cep-8X-IFx"/>
+                                    <constraint firstAttribute="trailing" secondItem="fHc-rq-K2v" secondAttribute="trailing" id="bUf-JB-TFI"/>
+                                    <constraint firstAttribute="bottom" secondItem="fHc-rq-K2v" secondAttribute="bottom" id="eIt-HH-uq3"/>
+                                    <constraint firstItem="fHc-rq-K2v" firstAttribute="top" secondItem="CFn-Yf-KN5" secondAttribute="top" id="jpr-qa-U9A"/>
+                                    <constraint firstItem="EHS-DR-yX2" firstAttribute="top" secondItem="CFn-Yf-KN5" secondAttribute="top" id="nD7-iZ-wZ0"/>
+                                    <constraint firstItem="EHS-DR-yX2" firstAttribute="leading" secondItem="CFn-Yf-KN5" secondAttribute="leading" id="swL-qg-LOD"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HCS-dZ-cJx">
+                                <rect key="frame" x="24" y="298" width="366" height="300"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="didTapFlashCard:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="9cV-Dg-7a0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EOB-EG-HmY">
+                                <rect key="frame" x="24" y="739" width="366" height="50"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="rZZ-em-z5h"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <state key="normal" title="Next Flag">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="didTapNextFlag:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="e3W-c6-vLt"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="EOB-EG-HmY" secondAttribute="bottom" constant="24" id="64M-Mp-EbK"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="CFn-Yf-KN5" secondAttribute="trailing" constant="24" id="Je0-UO-xrJ"/>
+                            <constraint firstItem="g2e-HP-31Q" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="24" id="a4x-gK-xVD"/>
+                            <constraint firstItem="g2e-HP-31Q" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="24" id="aFh-Bc-NwO"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="g2e-HP-31Q" secondAttribute="trailing" constant="24" id="e5W-vV-vTE"/>
+                            <constraint firstItem="EOB-EG-HmY" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="24" id="hrJ-0l-61Y"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="EOB-EG-HmY" secondAttribute="trailing" constant="24" id="juF-he-yPT"/>
+                            <constraint firstItem="CFn-Yf-KN5" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="n0N-2m-2Ex"/>
+                            <constraint firstItem="CFn-Yf-KN5" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="24" id="pSd-u5-c0L"/>
+                            <constraint firstItem="CFn-Yf-KN5" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="wig-p5-1uL"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Flash Cards" image="button.flashcards" selectedImage="button.flashcards" id="BCu-2M-13j"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="backCardContainerView" destination="fHc-rq-K2v" id="hgK-97-016"/>
+                        <outlet property="cardContainerView" destination="CFn-Yf-KN5" id="6XU-eE-NKA"/>
+                        <outlet property="countryNameLabel" destination="xEt-Et-wEq" id="tz3-4v-JWn"/>
+                        <outlet property="flagButton" destination="HCS-dZ-cJx" id="KoG-fE-ZTb"/>
+                        <outlet property="flagContainerView" destination="EHS-DR-yX2" id="IIS-sW-nZB"/>
+                        <outlet property="flagImageView" destination="azJ-eU-l4q" id="1GH-yJ-6tW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="115"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="button.flashcards" width="27.5" height="21.5"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

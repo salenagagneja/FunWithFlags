@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" id="Y6W-OH-hqX" customClass="HomeViewController" customModule="FunWithFlags" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Aat-VS-ZpL">
+                                <rect key="frame" x="0.0" y="206" width="414" height="607"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="countryCell" id="M6i-I6-IE7" customClass="CountryTableViewCell" customModule="FunWithFlags" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="75.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="M6i-I6-IE7" id="rur-7n-4Fp">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="75.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j60-ku-KsG">
+                                                    <rect key="frame" x="24" y="8" width="366" height="59.5"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Philippines" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JIN-qa-jrg">
+                                                            <rect key="frame" x="86" y="20" width="246" height="19.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GB7-4Z-bn0">
+                                                            <rect key="frame" x="20" y="15" width="50" height="30"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="30" id="AMN-u5-htn"/>
+                                                                <constraint firstAttribute="width" constant="50" id="SUv-dC-7T7"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="icon.chevron.right" translatesAutoresizingMaskIntoConstraints="NO" id="VZz-Hi-qGU">
+                                                            <rect key="frame" x="340" y="25" width="10" height="10"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="10" id="Vql-Az-LcW"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="0.96863394979999995" green="0.96861582989999995" blue="0.96862810850000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="VZz-Hi-qGU" secondAttribute="trailing" constant="16" id="2ky-N2-LfC"/>
+                                                        <constraint firstItem="JIN-qa-jrg" firstAttribute="top" secondItem="j60-ku-KsG" secondAttribute="top" constant="20" id="F4l-ej-Xji"/>
+                                                        <constraint firstItem="VZz-Hi-qGU" firstAttribute="leading" secondItem="JIN-qa-jrg" secondAttribute="trailing" constant="8" id="FMp-So-MbH"/>
+                                                        <constraint firstItem="VZz-Hi-qGU" firstAttribute="centerY" secondItem="j60-ku-KsG" secondAttribute="centerY" id="W4F-Zk-SBh"/>
+                                                        <constraint firstItem="JIN-qa-jrg" firstAttribute="leading" secondItem="GB7-4Z-bn0" secondAttribute="trailing" constant="16" id="WRt-OE-HIS"/>
+                                                        <constraint firstItem="GB7-4Z-bn0" firstAttribute="leading" secondItem="j60-ku-KsG" secondAttribute="leading" constant="20" id="aGd-Ts-46q"/>
+                                                        <constraint firstAttribute="bottom" secondItem="JIN-qa-jrg" secondAttribute="bottom" constant="20" id="mDP-uN-cxR"/>
+                                                        <constraint firstItem="GB7-4Z-bn0" firstAttribute="centerY" secondItem="JIN-qa-jrg" secondAttribute="centerY" id="uoT-pH-pdm"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="10"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                            <real key="value" value="0.0"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="j60-ku-KsG" firstAttribute="top" secondItem="rur-7n-4Fp" secondAttribute="top" constant="8" id="ITb-ao-VBa"/>
+                                                <constraint firstAttribute="trailing" secondItem="j60-ku-KsG" secondAttribute="trailing" constant="24" id="P5e-m8-wt0"/>
+                                                <constraint firstItem="j60-ku-KsG" firstAttribute="leading" secondItem="rur-7n-4Fp" secondAttribute="leading" constant="24" id="exg-ef-ONu"/>
+                                                <constraint firstAttribute="bottom" secondItem="j60-ku-KsG" secondAttribute="bottom" constant="8" id="ttC-no-ijm"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="containerView" destination="j60-ku-KsG" id="TTf-BG-2ay"/>
+                                            <outlet property="countryNameLabel" destination="JIN-qa-jrg" id="WXx-sp-GGK"/>
+                                            <outlet property="flagImageView" destination="GB7-4Z-bn0" id="pUk-mh-ERB"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="8cA-o4-FfR">
+                                <rect key="frame" x="24" y="126" width="366" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mo3-Z2-UbA">
+                                        <rect key="frame" x="0.0" y="0.0" width="88.5" height="30"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                        <state key="normal" title="All">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" name="ViewBorderColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="didTapAll:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="bJQ-T5-4o3"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="glA-kB-LTA">
+                                        <rect key="frame" x="92.5" y="0.0" width="88.5" height="30"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Africa">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" name="ViewBorderColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="didTapAfrica:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="8pm-Xe-6lf"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LSp-v5-7eb">
+                                        <rect key="frame" x="185" y="0.0" width="88.5" height="30"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Americas">
+                                            <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" name="ViewBorderColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="didTapAmericas:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Y98-0I-CwM"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z1v-Oo-bSi">
+                                        <rect key="frame" x="277.5" y="0.0" width="88.5" height="30"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Asia">
+                                            <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" name="ViewBorderColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="didTapAsia:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="2mP-ti-ewf"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Enm-Yi-sGW">
+                                <rect key="frame" x="125" y="160" width="164" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IYG-tt-29j">
+                                        <rect key="frame" x="0.0" y="0.0" width="80" height="30"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="80" id="H0w-6O-wdu"/>
+                                        </constraints>
+                                        <state key="normal" title="Europe">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" name="ViewBorderColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="didTapEurope:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="01C-5V-e8O"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cty-iS-hg5">
+                                        <rect key="frame" x="84" y="0.0" width="80" height="30"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Oceania">
+                                            <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" name="ViewBorderColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="didTapOceania:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="xbE-5j-Rcp"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Search all countries here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="40t-Rk-itv" customClass="FWFPaddedTextField" customModule="FunWithFlags" customModuleProvider="target">
+                                <rect key="frame" x="24" y="60" width="366" height="50"/>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <accessibility key="accessibilityConfiguration" identifier="home_search_text_field"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="qyR-4v-Xwn"/>
+                                </constraints>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rightPadding">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Enm-Yi-sGW" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="532-Nv-9P1"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="Aat-VS-ZpL" secondAttribute="bottom" id="8A6-4V-zlw"/>
+                            <constraint firstItem="Enm-Yi-sGW" firstAttribute="top" secondItem="8cA-o4-FfR" secondAttribute="bottom" constant="4" id="8bf-ma-drB"/>
+                            <constraint firstItem="40t-Rk-itv" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="16" id="9oo-2r-Oak"/>
+                            <constraint firstItem="40t-Rk-itv" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="24" id="SMs-Fb-ybG"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Aat-VS-ZpL" secondAttribute="trailing" id="cHM-Io-DPt"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="8cA-o4-FfR" secondAttribute="trailing" constant="24" id="cyX-hd-baC"/>
+                            <constraint firstItem="8cA-o4-FfR" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="24" id="kkX-6w-ycM"/>
+                            <constraint firstItem="8cA-o4-FfR" firstAttribute="top" secondItem="40t-Rk-itv" secondAttribute="bottom" constant="16" id="p2b-5H-h3U"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="40t-Rk-itv" secondAttribute="trailing" constant="24" id="saD-Se-SCb"/>
+                            <constraint firstItem="Aat-VS-ZpL" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="tNE-cd-tUl"/>
+                            <constraint firstItem="Aat-VS-ZpL" firstAttribute="top" secondItem="Enm-Yi-sGW" secondAttribute="bottom" constant="16" id="wub-bQ-jzv"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="button.home" selectedImage="button.home" id="EK1-pG-wBq"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="countriesTableView" destination="Aat-VS-ZpL" id="IPI-Wc-GIa"/>
+                        <outlet property="searchTextField" destination="40t-Rk-itv" id="iJW-VH-FE5"/>
+                        <outletCollection property="customSegmentedControl" destination="Mo3-Z2-UbA" collectionClass="NSMutableArray" id="F95-sh-xEt"/>
+                        <outletCollection property="customSegmentedControl" destination="glA-kB-LTA" collectionClass="NSMutableArray" id="4d8-9F-Rbh"/>
+                        <outletCollection property="customSegmentedControl" destination="LSp-v5-7eb" collectionClass="NSMutableArray" id="vOX-p9-HAi"/>
+                        <outletCollection property="customSegmentedControl" destination="z1v-Oo-bSi" collectionClass="NSMutableArray" id="2NG-WL-gB7"/>
+                        <outletCollection property="customSegmentedControl" destination="IYG-tt-29j" collectionClass="NSMutableArray" id="nXn-yL-vA3"/>
+                        <outletCollection property="customSegmentedControl" destination="Cty-iS-hg5" collectionClass="NSMutableArray" id="5d3-xd-7Dz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="114.50892857142857"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="40t-Rk-itv">
+            <size key="intrinsicContentSize" width="195.5" height="21"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="button.home" width="25.5" height="21.5"/>
+        <image name="icon.chevron.right" width="6" height="10"/>
+        <namedColor name="ViewBorderColor">
+            <color red="0.92199999094009399" green="0.92199999094009399" blue="0.92199999094009399" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

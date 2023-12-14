@@ -1,0 +1,83 @@
+PODS:
+  - Alamofire (5.4.3)
+  - CocoaLumberjack (3.7.2):
+    - CocoaLumberjack/Core (= 3.7.2)
+  - CocoaLumberjack/Core (3.7.2)
+  - FLEX (4.4.1)
+  - IQKeyboardManagerSwift (6.5.6)
+  - KeychainSwift (19.0.0)
+  - Kingfisher (5.15.8):
+    - Kingfisher/Core (= 5.15.8)
+  - Kingfisher/Core (5.15.8)
+  - Nimble (9.2.0)
+  - Quick (4.0.0)
+  - RxCocoa (6.0.0-rc.2):
+    - RxRelay (= 6.0.0-rc.2)
+    - RxSwift (= 6.0.0-rc.2)
+  - RxRelay (6.0.0-rc.2):
+    - RxSwift (= 6.0.0-rc.2)
+  - RxSwift (6.0.0-rc.2)
+  - SVGKit (3.1.0):
+    - CocoaLumberjack (~> 3.0)
+  - SwiftLint (0.43.1)
+
+DEPENDENCIES:
+  - Alamofire
+  - FLEX (from `https://github.com/FLEXTool/FLEX`)
+  - IQKeyboardManagerSwift
+  - KeychainSwift
+  - Kingfisher (~> 5.0)
+  - Nimble
+  - Quick
+  - RxCocoa (= 6.0.0-rc.2)
+  - RxSwift (= 6.0.0-rc.2)
+  - SVGKit (from `https://github.com/SVGKit/SVGKit.git`, branch `3.x`)
+  - SwiftLint
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - CocoaLumberjack
+    - IQKeyboardManagerSwift
+    - KeychainSwift
+    - Kingfisher
+    - Nimble
+    - Quick
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+    - SwiftLint
+
+EXTERNAL SOURCES:
+  FLEX:
+    :git: https://github.com/FLEXTool/FLEX
+  SVGKit:
+    :branch: 3.x
+    :git: https://github.com/SVGKit/SVGKit.git
+
+CHECKOUT OPTIONS:
+  FLEX:
+    :commit: 91547b93d6a393ac426bcb45af6332de78414649
+    :git: https://github.com/FLEXTool/FLEX
+  SVGKit:
+    :commit: 6a594bdc3554a2a630ee27e56c39b8a3f2aa73b3
+    :git: https://github.com/SVGKit/SVGKit.git
+
+SPEC CHECKSUMS:
+  Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
+  CocoaLumberjack: b7e05132ff94f6ae4dfa9d5bce9141893a21d9da
+  FLEX: 7ca2c8cd3a435ff501ff6d2f2141e9bdc934eaab
+  IQKeyboardManagerSwift: c7df9d2deb356c04522f5c4b7b6e4ce4d8ed94fe
+  KeychainSwift: a06190cf933ad46b1e0abc3d77d29c06331715c7
+  Kingfisher: a3c03d702433fa6cfedabb2bddbe076fb8f2e902
+  Nimble: 4f4a345c80b503b3ea13606a4f98405974ee4d0b
+  Quick: 6473349e43b9271a8d43839d9ba1c442ed1b7ac4
+  RxCocoa: 38445a25751be5907f52f7ea02c137f52ce2e7f2
+  RxRelay: b9e2483e83f46e4e7bf1234c6fe418e5c2eaf825
+  RxSwift: ada35be6643bedf6881cdbd6bbfb27aeea527670
+  SVGKit: 3c8468aab0026048532a3b27a0c81cdd939f0649
+  SwiftLint: 99f82d07b837b942dd563c668de129a03fc3fb52
+
+PODFILE CHECKSUM: 3f8d4a49be1ed0f036b1a20a9cbf3f80bf35c2ea
+
+COCOAPODS: 1.10.1
